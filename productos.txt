@@ -1,0 +1,92 @@
+[
+  {
+    "title": "tv1",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "015337be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv2",
+    "description": "descripcion prod 2",
+    "price": 2500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "44820200-b24d-478f-84e9-e69c4f8cf650"
+  },
+  {
+    "title": "tv3",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "dac58fd1-4123-4b06-ad4f-aade9f184b2e"
+  },
+  {
+    "title": "tv4",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "065599be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv5",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "065597be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv6",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "065297be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv7",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "015597be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv8",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "063597be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv9",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "068597be-4846-4b2b-891e-ceddb54a01a9"
+  },
+  {
+    "title": "tv10",
+    "description": "descripcion prod 3",
+    "price": 3500,
+    "thumbnail": "url imagen",
+    "stock": 45,
+    "code": televisor,
+    "id": "b7e04998-900a-4078-bdff-c0068dba2a81"
+  }
+]
