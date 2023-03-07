@@ -37,15 +37,7 @@ export class ProductManager {
       }
 
 
-    // async getProducts() {
-    //    try {
-    //      const jsonProducts = await fs.readFile(this.path, 'utf-8')
-    //      this.products = JSON.parse(jsonProducts)
-    //      return this.products
-    //    } catch (error) {
-    //     throw new Error("imposible leer el archivo")
-    //    }
-    // }
+ 
     async addProduct(title, description, price, thumbnail, stock, code) {
 
         try {
@@ -78,24 +70,22 @@ export class ProductManager {
     }
 
     async getProductById(id) {
-      try {
+      
           const jsonProducts = await fs.readFile(this.path, 'utf-8')
           this.products = JSON.parse(jsonProducts)
   
-          const productFind = this.products.find((product) => product.code === id)
+          const productFind = this.products.find((product) => product.id === id)
           if (productFind === undefined) {
-              throw new Error("producto no encontrado")
+              throw new Error("producto no encontrado o ID invalido")
           } else {
   
               return productFind
           }
-      } catch (error) {
-        console.log(error);
-      }
+      
     }
 
 async updateProduct(id, prodModificado) {
-    try {
+    
         const jsonProducts = await fs.readFile(this.path, 'utf-8')
         this.products = JSON.parse(jsonProducts)
     
@@ -112,9 +102,7 @@ async updateProduct(id, prodModificado) {
         const jsonProductsModif = JSON.stringify(this.products, null, 2)
         await fs.writeFile(this.path, jsonProductsModif)
         console.log("El producto se actualizo con exito");
-    } catch (error) {
-        console.log(error.message);
-    }
+   
   }
 
 
@@ -123,10 +111,10 @@ async updateProduct(id, prodModificado) {
         const jsonProducts = await fs.readFile(this.path, 'utf-8')
         this.products = JSON.parse(jsonProducts)
 
-        const productFindIndex = this.products.findIndex((product) => product.code === id)
+        const productFindIndex = this.products.findIndex((product) => product.id === id)
 
         if (productFindIndex === -1) {
-            console.log("Product Not found");
+            throw new Error("Product Not found");
         } else {
             this.products.splice(productFindIndex, 1)
             console.log('Product deleted');
@@ -138,7 +126,7 @@ async updateProduct(id, prodModificado) {
     }
 }
 
-const productManager = new ProductManager('./productos.txt');
+// const productManager = new ProductManager('./productos.txt');
 
 // const prod1 = productManager.addProduct("Camisa", "Camisa de algodon", 2222, "https://google.com.ar", 5, );
 // const prod2 = productManager.addProduct("tv2", "descripcion prod 2", 2500, "url imagen", 45);
@@ -148,7 +136,7 @@ const productManager = new ProductManager('./productos.txt');
 
 // productManager.deleteProduct('6c80a977-dfa6-489a-a8a6-51d6861c26fd')
 
-console.log('console log de get products',await productManager.getProducts());
+// console.log('console log de get products',await productManager.getProducts());
 
 // console.log("producto filtrado por ID", productManager.getProductById('6c80a977-dfa6-489a-a8a6-51d6861c26fd'));
 

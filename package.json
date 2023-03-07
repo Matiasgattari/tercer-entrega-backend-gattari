@@ -3,7 +3,7 @@
   "name": "entregable-2",
   "version": "1.0.0",
   "description": "",
-  "main": "src/main.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "node .",
     "test": "nodemon -e 'js,html' ."
